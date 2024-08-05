@@ -40,7 +40,7 @@ const Header = () => {
           <Nav />
           {/* Button */}
           
-                        <Button variant='orange'  size='sm' asChild>
+                        <Button variant='orange' className="hidden lg:block" size='sm' asChild>
                           <Link href='/login' className="cursor-pointer"> 
                            Login
                            </Link>
