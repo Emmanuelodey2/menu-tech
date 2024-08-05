@@ -10,7 +10,7 @@ import StepCounter from "@/components/stepCounter";
 import Link from "next/link";
 import {useRouter} from 'next/navigation'
 export default function SignUp() {
-  
+
   const [nextPage, setNextPage] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [isFormValid, setIsFormValid] = useState(false);
@@ -140,8 +140,8 @@ const router = useRouter()
 
   return (
     <form className="w-full relative overflow-hidden" onSubmit={handleSubmit}>
-      <div className="lg:w-[50%] w-full bg-white p-6 flex flex-col justify-center">
-        <div className="xl:px-12 top-0 py-12">
+      <div className="lg:w-[50%] w-full bg-white p-6 flex flex-col justify-center items-center ">
+        <div className=" w-full max-w-md">
           <div className="mb-12">
             <StepCounter currentStep={currentStep} totalSteps={2} />
             <h4 className="font-semibold text-xl max-md:justify-center flex">
@@ -266,8 +266,8 @@ const router = useRouter()
                   className="border-[1px] border-black/40 w-full h-10 rounded-md"
                 />
               </div>
-              <div className="flex gap-x-4 mb-4">
-                <div className="w-1/2 mb-4">
+              <div className=" lg:flex gap-x-4 mb-4">
+                <div className=" lg:w-1/2 mb-4">
                   <Label className="text-black">Password</Label>
                   <Input
                     type="password"
@@ -281,7 +281,7 @@ const router = useRouter()
                     className="border-[1px] border-black/40 w-full h-10 rounded-md"
                   />
                 </div>
-                <div className="w-1/2 mb-4">
+                <div className=" lg:w-1/2 mb-4">
                   <Label className="text-black">Confirm Password</Label>
                   <Input
                     type="password"
